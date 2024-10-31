@@ -4,14 +4,15 @@ public class Motor extends Kendaraan {
     private int kapasitasMesin;
     private String jenisTransmisi;
 
-    public Motor (final String merek, final String model, final int tahunProduksi) {
+    public Motor(final String merek, final String model, final int tahunProduksi, final int kapasitasMesin, final String jenisTransmisi) {
         super(merek, model, tahunProduksi);
+        this.kapasitasMesin = kapasitasMesin;
+        this.jenisTransmisi = jenisTransmisi;
     }
 
-    @Override
     public void infoMotor() {
         super.infoKendaraan();
-        System.out.println("Kapasitas mesin: " + kapasitasMesin);
-        System.out.println("Jenis transmisi: " + jenisTransmisi);
+        System.out.println("Kapasitas Mesin: " + kapasitasMesin);
+        System.out.println("Jenis Transmisi: " + jenisTransmisi);
     }
 }

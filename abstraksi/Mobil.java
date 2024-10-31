@@ -2,11 +2,12 @@ package abstraksi;
 
 public class Mobil extends Kendaraan {
 
-    public Mobil (final String warna) {
-        super (warna);
+    public Mobil(final String warna) {
+        super(warna);
     }
-    @override
+
+    @Override
     void bergerak() {
-        System.out.println("Mobil bergerak di jalan:");
+        System.out.println("Mobil bergerak di jalan");
     }
 }

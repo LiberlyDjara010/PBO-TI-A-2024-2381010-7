@@ -1,11 +1,12 @@
 package polinorfisme;
 
 public class Lingkaran extends BangunDatar{
-    private double jariJari:
+    private double jariJari;
 
     public Lingkaran(final double jariJari) {
         this.jariJari = jariJari;
     }
+
     @Override
         public double hitungLuas() {
             return Math.PI * jariJari * jariJari;
@@ -16,4 +17,3 @@ public class Lingkaran extends BangunDatar{
         return 2 * Math.PI * jariJari;
         }
     }
-}
